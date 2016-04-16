@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Animalchat</title>
+  <link rel="stylesheet" type="text/css" href="css/main.css" />
+  <link rel="stylesheet" type="text/css" href="css/image-picker.css" />
+</head>
+
+<body>
+  <div id="timelineFrame" class="center">
+    <ul id="timeline" class="pager" data-bind="foreach: milkcocoaval">
+      <li>
+        <div class="flex" data-bind="html: message">
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="floating">
+    <div class="center">
+      <select id="user" name="userSelect">
+        <option value="buta" data-img-src='img/buta.png'>buta</option>
+        <option value="inu" data-img-src='img/inu.png'>inu</option>
+        <option value="kuma" data-img-src='img/kuma.png'>kuma</option>
+        <option value="lion" data-img-src='img/lion.png'>lion</option>
+        <option value="neko" data-img-src='img/neko.png'>neko</option>
+        <option value="penguin" data-img-src='img/penguin.png'>penguin</option>
+        <option value="tora" data-img-src='img/tora.png'>tora</option>
+        <option value="usagi" data-img-src='img/usagi.png'>usagi</option>
+        <option value="panda" data-img-src='img/panda.png'>panda</option>
+        <option value="risu" data-img-src='img/risu.png'>risu</option>
+      </select>
+    </div>
+    <textarea id="msg" class="textcss" cols="30" rows="3"></textarea>
+    <button id="btn" class="btncss">コメントする</button>
+    <br/>
+    <button id="btnSave" class="btncss idbtncss">app-idを保存する</button>
+    <button id="btnDelete" class="btncss idbtncss">app-idを削除する</button>
+  </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="https://cdn.mlkcca.com/v2.0.0/milkcocoa.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.0/knockout-min.js"></script>
+  <script type="text/javascript" src="js/image-picker.min.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>
